@@ -72,8 +72,6 @@ import plotly.graph_objects as go
 import plotly.express as px
 from scipy.stats import poisson
 import matplotlib.pyplot as plt
-import simpy
-import traceback
 
 try:
     # Enable debug mode
@@ -936,5 +934,4 @@ try:
             """)
 
 except Exception as e:
-    st.error(f"An error occurred: {str(e)}")
-    st.error(f"Traceback: {traceback.format_exc()}") 
+    st.error(f"An error occurred: {str(e)}") 
