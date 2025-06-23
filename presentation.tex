@@ -1,0 +1,168 @@
+\documentclass[aspectratio=169]{beamer}  % 16:9 aspect ratio for modern displays
+
+% Theme and Color Settings
+\usetheme{Madrid}  % Professional theme with navigation bar
+\usecolortheme{whale}  % Professional blue color scheme
+\useinnertheme{rectangles}  % Modern rectangular elements
+\useoutertheme{miniframes}  % Navigation dots at top
+
+% Required Packages
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepackage{siunitx}  % For number formatting
+\usepackage{multirow}
+\usepackage{tikz}  % For custom graphics
+
+% Custom Colors
+\definecolor{myblue}{RGB}{0,103,149}
+\definecolor{mylight}{RGB}{235,245,255}
+\definecolor{mygray}{RGB}{128,128,128}
+\setbeamercolor{structure}{fg=myblue}
+\setbeamercolor{background canvas}{bg=white}
+\setbeamercolor{normal text}{fg=black}
+
+% Title Page Information
+\title[Hospital Patient Flow Study]{Optimizing Hospital Patient Flow:\\A Simulation-Based Analysis}
+\author[Research Team]{Research Team\\[0.3em]\small{Supervisor: Dr. Alexis}}
+\institute[University]{Department of Healthcare Operations Research}
+\date{\today}
+
+\begin{document}
+
+% Title Frame
+\begin{frame}
+    \titlepage
+\end{frame}
+
+% Research Overview
+\begin{frame}{Research Overview}
+    \begin{block}{Problem Statement}
+        How can we optimize hospital resource allocation while maintaining quality patient care?
+    \end{block}
+    \vspace{0.5em}
+    \begin{itemize}
+        \item \textbf{Focus:} Emergency Department patient flow
+        \item \textbf{Method:} M/M/c/K queuing model simulation
+        \item \textbf{Sample:} 30 patients (Poisson arrival process)
+    \end{itemize}
+\end{frame}
+
+% Research Objectives
+\begin{frame}{Research Objectives}
+    \begin{columns}[T]
+        \begin{column}{0.48\textwidth}
+            \begin{block}{Primary Objective}
+                Develop and validate an M/M/c/K queuing model for hospital bed occupancy analysis
+            \end{block}
+        \end{column}
+        \begin{column}{0.48\textwidth}
+            \begin{itemize}
+                \item Analyze staff experience impact
+                \item Evaluate resource utilization
+                \item Assess patient flow metrics
+            \end{itemize}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+% Key Findings
+\begin{frame}{Key Findings: Three-Phase Analysis}
+    \begin{enumerate}
+        \item \textbf{Baseline Model}
+            \begin{itemize}
+                \item 72.4\% system utilization
+                \item Zero blocking probability
+            \end{itemize}
+        \vspace{0.3em}
+        \item \textbf{Experience-Based Model}
+            \begin{itemize}
+                \item 89.2\% system utilization
+                \item 16.67\% blocking probability
+            \end{itemize}
+        \vspace{0.3em}
+        \item \textbf{Dynamic Workload Model}
+            \begin{itemize}
+                \item 9.09\% blocking probability
+                \item Average wait time: 924.48 minutes
+            \end{itemize}
+    \end{enumerate}
+\end{frame}
+
+% Patient Flow Results
+\begin{frame}{Patient Flow Analysis}
+    \begin{columns}[T]
+        \begin{column}{0.48\textwidth}
+            \begin{block}{Treatment Duration}
+                \begin{itemize}
+                    \item \textbf{Minimum:} 24 minutes
+                    \item \textbf{Maximum:} 7,717 minutes
+                    \item \textbf{Median:} 1,430 minutes
+                \end{itemize}
+            \end{block}
+        \end{column}
+        \begin{column}{0.48\textwidth}
+            \begin{block}{System Performance}
+                \begin{itemize}
+                    \item 100\% discharge rate
+                    \item Efficient resource use
+                    \item No initial waiting time
+                \end{itemize}
+            \end{block}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+% Implications
+\begin{frame}{Key Implications}
+    \begin{block}{Resource Management}
+        \begin{itemize}
+            \item Staff experience significantly impacts system performance
+            \item Workload-dependent service rates affect patient flow
+            \item Balance needed between efficiency and waiting times
+        \end{itemize}
+    \end{block}
+    \vspace{0.5em}
+    \begin{block}{Recommendations}
+        \begin{itemize}
+            \item Optimize staff mix (junior/senior)
+            \item Monitor workload thresholds
+            \item Consider dynamic resource allocation
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+% Future Directions
+\begin{frame}{Future Directions}
+    \begin{columns}[T]
+        \begin{column}{0.48\textwidth}
+            \begin{block}{Extended Analysis}
+                \begin{itemize}
+                    \item Larger sample size
+                    \item Peak load periods
+                    \item Seasonal variations
+                \end{itemize}
+            \end{block}
+        \end{column}
+        \begin{column}{0.48\textwidth}
+            \begin{block}{Model Enhancements}
+                \begin{itemize}
+                    \item Multiple departments
+                    \item Resource constraints
+                    \item Patient acuity levels
+                \end{itemize}
+            \end{block}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+% Thank You Slide
+\begin{frame}[standout]
+    \begin{center}
+        \Huge Thank You\\[1em]
+        \large Questions \& Discussion
+    \end{center}
+\end{frame}
+
+\end{document} 

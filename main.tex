@@ -1,0 +1,1075 @@
+
+\documentclass{article}
+
+\usepackage[english]{babel}
+\usepackage{pdfpages}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+% Useful packages
+\usepackage{ragged2e}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=black]{hyperref}
+
+\begin{document}
+
+\begin{titlepage}
+\begin{center}
+{\Large \textbf{UNIVERSITY OF RWANDA}}\\
+\vspace{0.5cm}
+{\Large \textbf{COLLEGE OF SCIENCE AND TECHNOLOGY}}\\
+\vspace{0.5cm}
+{\Large \textbf{SCHOOL OF SCIENCE}}\\
+\vspace{0.5cm}
+{\Large \textbf{DEPARTMENT OF MATHEMATICS}}\\
+\vspace{2cm}
+
+\includegraphics[width=0.3\textwidth]{UR_logo.png}\\
+\vspace{2cm}
+
+{\Large \textbf{INDUSTRIAL ATTACHMENT REPORT}}\\
+\vspace{1cm}
+
+{\Large \textbf{AT}}\\
+\vspace{1cm}
+
+{\Large \textbf{RWANDA STOCK EXCHANGE (RSE)}}\\
+\vspace{2cm}
+
+{\large Presented by:}\\
+{\Large \textbf{KWIZERA ENOCK}}\\
+{\large Reg. No: 22201537}\\
+\vspace{1.5cm}
+
+{\large Submitted in partial fulfillment of the requirements for the award of}\\
+{\large Bachelor's Degree in Applied Mathematics}\\
+\vspace{2cm}
+
+{\large September 2024}
+\end{center}
+\end{titlepage}
+
+\begin{titlepage} 
+  
+\\
+\begin{titlepage} 
+
+\section*{{\textbf{\huge{Declaration}}}}
+\\
+\vspace{0.5cm}
+
+
+\Large
+    
+I hereby declare that, except where otherwise indicated, this document is entirely my own work and has 
+not been submitted in whole or in part to any other university. 
+\\
+All references and sources used in this report have been duly 
+acknowledged. I attest that the information presented is accurate and reliable to the best of my 
+knowledge.
+
+\\
+
+\\
+\vspace{1cm}
+ 
+KWIZERA ENOCK
+\\
+\\
+
+
+Signature 
+\\
+\\
+
+
+Date: 
+\\
+
+\vspace{2cm}
+
+{\textbf{\huge}}
+\end{titlepage}
+\end{title}
+
+\begin{titlepage}
+
+    \vspace{1cm}
+    
+\section*{{\textbf{\huge{Certification }}}}
+\vspace{0.5cm}
+\Large
+
+This is to certify that this industrial attachment report is a record of original work done by KWIZERA ENOCK at Rwanda Stock Exchange.
+Who carried out his internship program for 4 weeks from 08th to 09th August 2024.
+
+\vspace{0.6cm}
+\begin{flushleft}
+    
+
+\textbf{Host institution Supervisor  RSE Ltd}
+\vspace{0.5cm}
+
+Name:
+\vspace{0.5cm}
+
+Signature 
+\\
+\\
+\\
+\\
+
+\vspace{1cm}
+
+Date: 
+\\
+\\
+\vspace{1cm}
+
+
+\textbf{Head of Department}
+\vspace{0.5cm}
+
+Name:
+\vspace{0.5cm}
+
+Signature:
+\vspace{0.5cm}
+
+Date:
+
+\end{flushleft}
+\end{titlepage}
+
+
+\begin{minipage}{15.6cm}
+
+\section*{\textbf{\huge{Acknowledgements}}}
+\\
+
+
+\Large
+
+
+I would like to express my sincere gratitude to everyone who contributed to making this internship a valuable and rewarding experience.\\
+
+First and foremost, I would like to thank  my internship supervisor at Rwanda Stock Exchange, for their constant guidance, valuable insights, and unwavering support throughout the duration of this internship. Their expertise and encouragement have greatly contributed to my learning and professional growth.\\
+
+I am also deeply grateful to all RSE Members , who provided me with daily guidance and assistance, helping me navigate through challenges and make the most out of my time at RSE. Their mentorship has been instrumental in honing my skills and understanding the practical aspects of the industry.
+\\
+
+I would also like to thank Other Key Individuals or Teams for their warm welcome and collaboration, making my time at Rwanda Stock Exchange a memorable and enriching experience.
+\\
+
+
+Additionally, I am thankful to my Academic Supervisor for the academic support and for providing me with the opportunity to undertake this internship as part of my educational journey.
+\\
+
+
+
+Finally, I wish to extend my heartfelt appreciation to my family and friends for their constant encouragement and support during this internship period.
+\end{minipage}
+\end{center}
+
+
+\begin{titlepage}
+    \huge
+\section*{\textbf{\huge{Abstract}}}
+\\
+    
+\Large
+\begin{minipage}{15.6cm}
+
+The internship is an indispensable program which is every important to students at University of
+ Rwanda to carry out as it enables him/her to make the relevance of the theory to field
+ expectations.
+ This is always done as a partial fulfillment of the academic requirements for the award of
+ bachelor's degree in APPLIED MATHEMATICS, at University of Rwanda. It exposes the
+ students to the realities of work environment at the field. It also enables the students to
+ harmonize the theoretical knowledge acquired in class with particular skills to students.
+ \\
+
+ 
+This report details the experience gained during my internship at the Rwanda Stock Exchange (RSE), a key institution in Rwanda's financial sector responsible for facilitating the buying and selling of securities. The (RSE) plays a critical role in the economic development of Rwanda by providing a platform for capital raising and investment.
+\\
+
+
+During my internship, I served as an intern in the research and analysis department, where my primary responsibilities included the application of mathematical and statistical techniques to financial data analysis. My duties involved analyzing market trends, developing predictive models for stock prices using time series analysis, and optimizing investment portfolios through linear programming. Additionally, I was responsible for assessing market volatility using stochastic models and assisting in the preparation of financial reports and market summaries.
+\\
+
+Through these tasks, I was able to apply the theoretical knowledge from my studies in applied mathematics to real-world financial scenarios, thereby enhancing my practical understanding of the role of quantitative methods in financial markets. This internship provided invaluable experience in utilizing mathematical tools for data-driven decision-making within a dynamic financial environment.
+
+    
+\end{minipage}
+
+\end{titlepage}
+\begin{titlepage}
+    
+
+\pagenumbering{goggle}
+    \tableofcontents
+
+\end{titlepage}
+
+\pagenumbering{Roman}
+\setcounter{page}{2}
+
+\section{{\textbf{\huge{Description of Rwanda Stock Exchange}}}}
+\vspace{2cm}
+\Large
+
+ \textbf{A Stock Exchange} is an organized 
+and regulated financial market 
+where securities are bought and 
+sold at prices governed by the 
+forces of demand and supply. Stock 
+exchanges impose stringent rules, 
+listing requirements, and statutory 
+requirements that are binding on all 
+listed and trading parties.
+\\
+\vspace{0.2cm}
+\hspace{3cm}"Wealth a way of life"
+
+ \vspace{0.7cm}
+ 
+ \end{flushleft}
+
+\end{titlepage}
+\begin{titlepage}
+    \includepdf[page=1]{rse.pdf}
+    \includepdf[page=1]{vmv.pdf}
+\end{titlepage}
+\begin{titlepage}
+  \begin{titlepage}
+  \pagenumbering{Roman}
+  \setcounter{page}{4}
+    \begin{center}
+  \textbf{\huge{How does the Rwanda Stock Exchange (RSE) operate}}
+    \end{center}
+   \\
+   \Large
+   
+   Trading on RSE is conducted through a dual process:   \vspace{0.3cm}
+    \begin{itemize}
+       \item 
+       An open outcry trading session is conducted at the trading floor during formal trading hours (9:00 a.m – 12:00 p.m).
+       \item 
+       Members trade through an Over the Counter market (OTC) where a member is allowed to buy or sell directly to clients in their offices. Equally members are allowed to transact with other members either face to face or through the telephone after the formal trading hours of the normal working days.  All OTC transactions have to be reported to RSE not later than 1 hour after the transaction(s), and shall be reported in the next formal trading session for purposes of settlement. 
+       
+   \end{itemize}
+
+ 
+
+   \begin{flushleft}
+             \textbf{Clearing and Settlement on the RSE market}
+   \vspace{0.3cm}  
+   
+   The outcome of the clearing and settlement process is the transfer of ownership of the securities transacted on the RSE market from the seller to the buyer and the transfer of funds for the same securities from the buyer to the seller. 
+\\
+
+ CSD will provide Central Depository Agents (CDAs) and their Settlement Banks with their respective Initial Settlement Reports by 3.30 pm. on T.CSD will provide CDAs and their Settlement banks with their respective Final Settlement Reports by 3.30 pm on T+4.
+\\
+
+Each CDA must have funds available in the settlement account with its Settlement Bank in accordance with the Final Settlement Report before 5.00 pm on T+4.The Settlement bank shall notify each CDAs' settlement position to the CSD on T+4, 5.00  pm. CSD will submit to the Clearing  Bank Settlement Instructions in respect of trades effected on trade day T on T+5, 9.00 a.m.The Settlement Bank shall transfer funds for settlement in accordance with the Settlement Instructions, by 10.00 am on T+5.The Clearing Bank will confirm settlement of funds by fax (or any other mode as may be agreed from time to time) to the CSD immediately whereupon CSD will forthwith transfer the securities. The settlement of funds and movement of securities shall in any case occur by 10.00 am.
+  \end{flushleft}
+  
+
+
+\end{titlepage}
+\begin{titlepage}
+     \begin{center}
+  \textbf{\huge{How are shares bought and sold on the RSE?}}
+    \end{center}
+    \\
+    \begin{flushleft}
+        \Large
+    After the shares have been allocated to subscribers in the primary market, the company that offered its shares to the public is listed on the Rwanda Stock Exchange (RSE) where shares can only be bought and sold through licensed stockbrokers (stockbrokers are professionals licensed by CMAC to buy and sell shares on behalf of clients. For this service they charge a commission).
+\\
+
+The secondary market is the market where already existing shares and bonds are bought and sold through licensed stockbrokers who are members of the RSE.\
+\vspace{0.3cm}
+\Large
+
+Step 1 :\textbf{Open an investment account with your stockbroker}
+\vspace{0.2cm}
+
+To buy securities, one must open an investment account with a stockbroker for investment and trading in securities. To open this account one needs to provide 2 recent passport photos and a copy of ID card. The stockbroker will also open a CSD account into which your shares/bonds will be held electronically.
+
+\vspace{0.2cm}
+
+Step 2 :\textbf{Placing a buying or selling order to your stockbroker}
+\vspace{0.2cm}
+
+To buy shares or bonds you are required to discuss with your stockbroker and then provide your account details. To buy or sell, you must give written instructions to your stockbrokers.
+\vspace{0.4cm}
+
+\textbf{Listed Companies:}
+
+\end{flushleft}
+\large
+
+I&M Bank Rwanda \hspace{3cm}   Uchumi Super Market Ltd
+\\
+
+BK GROUP PLC  \hspace{3cm}    Equity Bank Group Ltd
+\\
+
+CIMERWA PLC  \hspace{3.3cm}     Kenya Commercial Bank (KCB)
+\\
+
+MTN Rwandacell  \hspace{3cm}   RH Bophelo Ltd
+\\
+
+Bralirwa   \hspace{4.7cm}     National Media Group
+\\
+
+
+\end{titlepage}
+\begin{titlepage}
+
+\begin{titlepage}
+\pagenumbering{Roman}
+\setcounter{page}{7}
+  \section{{\textbf{\huge{Internship objectives}}}}
+    \end{center}
+\vspace{0.4cm}
+
+
+\subsection{{\Large{\textbf{I.Overall Objective}}}}
+\\
+
+\Large
+
+    
+ \begin{flushleft}
+     
+
+My objective as an intern at Rwanda Stock Exchange was to apply academic knowledge in a practical setting by gaining hands-on experience and a deeper understanding of the operations, regulatory framework, and financial instruments of the Rwanda Stock Exchange, thereby enhancing my skills and preparing for a career in finance and investment.
+\end{flushleft}
+
+\vspace{0.7cm}
+
+\subsection{{\Large{\textbf{II.Specific Objective}}}}
+\\
+
+    \begin{flushleft}
+        
+ 
+1.Learning:
+My objective was to bridge the gap between academic learning and practical application by working on real-life tasks and reports within the Rwanda Stock Exchange.
+\vspace{0.2cm}
+
+
+2.Gain Insight into Stock Exchange Operations:
+To understand the daily operations of the Rwanda Stock Exchange, including trading processes, market regulations, and the roles of different market participants.
+\vspace{0.2cm}
+
+3.Develop Analytical Skills:
+To enhance my ability to analyze financial markets, securities, and economic trends by engaging in research and data analysis activities.
+\vspace{0.2cm}
+
+4.Learn About Rules, Regulatory and Compliance Practices:
+To understand the RSE Blue print  , regulatory environment governing the stock market in Rwanda, including compliance requirements and the role of regulatory bodies.
+\vspace{0.2cm}
+
+5.Experience the Practical Aspects of Trading:
+To gain practical experience in trading and investment, including the use of trading platforms and understanding risk management strategies.
+\vspace{0.2cm}
+
+6.Understand the Role of Technology in Finance:
+To explore how technology is integrated into financial markets, including the use of trading systems and financial analysis tools.
+
+
+\newpage
+
+  \section{{\textbf{\huge{Job Description}}}}
+  
+\subsection{\Large{\textbf{Introduction}}}
+\vspace{0.3cm}
+
+As a motivated and enthusiastic university student, I had the opportunity to intern at the Rwanda Stock Exchange (RSE) during 4 weeks of working, one of the leading financial markets in Rwanda. This internship provided me with valuable exposure to the operations of a stock exchange, deepening my understanding of capital markets, securities trading, and investor relations. Throughout my internship, I developed essential skills in market analysis, data interpretation, and customer service while collaborating with experienced professionals in the financial sector. 
+\vspace{0.3cm}
+
+By doing this job as an intern , I learned a lot , gain some connection and resources that would help in my growing invstement portfolio, also to be hired  in job seeking.
+\vspace{0.4cm}
+
+Below are summaries of the few tasks that i performed during my internship at RSE.
+\end{titlepage}
+\begin{titlepage}
+
+\pagenumbering{Roman}
+\setcounter{page}{9}
+
+\subsection{\Large{\textbf{Task 1:Price Movements for the First Half  of 2024}}}
+
+
+\Large
+\vspace{0.2cm}
+
+\textbf{Objective:}
+
+To monitor and analyze price movements of Local securities listed on the Rwanda Stock Exchange (RSE) during the first half of 2024. The goal was to identify trends, price fluctuations, and market drivers, providing insights to help investors make informed decisions.
+
+\vspace{0.8cm}
+
+\begin{flushleft}
+    \textbf{My responsibility}
+\vspace{0.3cm}
+
+As an intern, I was responsible for tracking daily price movements of local listed securities, analyzing patterns, and preparing reports on market performance. This involved working closely with my group team members that have been assigned the same tasks and  senior analysts to ask  for some difficulty questions, Also to be on time for submitting the report.
+
+\end{flushleft}
+
+\vspace{0.8cm}
+
+\begin{flushleft}
+    \textbf{\underline{Task Description} }
+\vspace{0.3cm}
+
+The task primarily involved monitoring, analyzing, and reporting on the price movements of local securities listed on the Rwanda Stock Exchange (RSE) during the first six months of 2024. This was a critical part of understanding market behavior and assisting investors with data-driven insights. The details of the task are as follows:
+\\
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{Screenshot 2025-01-31 162147.png}
+    \caption{Shows Rwanda Stock Exchange trading board.}
+    \label{fig:enter-label}
+\end{figure}
+\vspace{0.3cm}
+
+*Monitored the daily stock prices of equities  listed on the Rwanda Stock Exchange for the first half of 2024.\\
+\vspace{0.3cm}
+
+*Analyzed price movements using historical data to identify trends, key events, and external factors affecting price changes.\\
+\vspace{0.3cm}
+
+*Assisted in preparing monthly and quarterly market reports for internal review and investor communication.
+\vspace{0.3cm}
+
+By undertaking this task, I was able to deepen my understanding of stock price behaviors and the factors influencing market movements, while gaining experience in data analysis and reporting.
+
+
+\end{flushleft}
+
+\end{titlepage}
+
+\pagenumbering{roman}
+\setcounter{page}{10}
+
+\begin{flushleft}
+    \textbf{\underline{Technical Details}}
+\vspace{0.3cm}
+\\
+The technical details refer to the specific tools, platforms, and data sources I used, as well as how they were applied to accomplish the task of tracking and analyzing price movements for local listed securities on the Rwanda Stock Exchange (RSE) in the first half of 2024.
+\vspace{0.3cm}
+
+\textbf{1.Software/Tools Used:}
+\vspace{0.2cm}
+
+I employed several software tools to analyze, and present data effectively:
+\begin{itemize}
+    \item \textbf{Microsoft Excel:}
+    \\
+    
+    Excel was the primary tool for organizing and analyzing stock market data. I used it to track daily stock prices, calculate changes in percentage, and create charts to visualize price movements over time.
+
+    \item \textbf{Rwanda Stock Exchange Online System:}
+    \\
+    The RSE's online platform provided me with direct access to daily trading data, including stock prices and listings. I used this system to view official data on a daily basis to ensure my analysis was based on the most up-to-date figures. This platform also provided access to information on listed companies, market indices, and regulatory news that impacted stock prices.
+
+\end{itemize}
+\vspace{0.4cm}
+
+\textbf{2.Data Sources:}
+\vspace{0.2cm}
+
+Accurate and reliable data was critical for tracking and analyzing price movements. I drew from the following sources:
+\begin{itemize}
+    \item \textbf{Rwanda Stock Exchange Data:}
+    \\
+    The official data provided by our Senior analyst included daily stock prices and trading volumes.I downloaded this data directly from the email he sent. This was my primary source of information for local market movements.
+    \item \textbf{Historical Data:}
+    \\
+    I also referred to historical data from previous years (e.g., 2022, 2023) to compare trends. This allowed me to analyze whether price movements followed typical seasonal patterns or were influenced by other factors, such as market disruptions or economic policy changes.
+\end{itemize}
+
+
+\pagenumbering{Roman}
+\setcounter{page}{11}
+
+
+\textbf{3.Data Analysis and Visualization:}
+\vspace{0.2cm}
+
+Creating charts  was a key part of the task. I generated line charts to illustrate stock price movements over time These visuals were included in the reports I presented to the senior analyst and investors to make the data easier to understand.
+\vspace{0.5cm}
+
+\textbf{4.Collaboration Tools:}
+\begin{itemize}
+    \item \textbf{Google drive and Email Communication:}
+    \\
+    Sharing data and reports with team members was an essential part of the workflow. I used Google Drive to store and share large Excel files and reports, ensuring that all team members had access to the latest version of each document. For formal communications, I used email to submit reports to senior analyst and  ensuring he had timely access to the market analysis.
+\end{itemize}
+\vspace{0.3cm}
+
+These technical tools and platforms helped me efficiently gather and analyze data, create meaningful reports, and collaborate effectively with my team. By mastering these technologies, I was able to provide accurate, data-driven insights into stock price movements, contributing to informed decision-making within the Rwanda Stock Exchange
+
+\vspace{0.5cm}
+
+\newpage
+
+\begin{flushleft}
+    \textbf{\underline{Scientific/Professional Skills Required:}}
+\vspace{0.3cm}
+
+To successfully perform the task of analyzing price movements on the Rwanda Stock Exchange (RSE) for the first half of 2024, several scientific and professional skills were required. These skills enabled me to interpret financial data, use analytical tools, and present insights in a clear, concise manner , Also the rule book was very crucial. Below is an explanation of the key skills involved:
+\vspace{0.3cm}
+
+\textbf{1.Knowledge of Financial Markets:}
+\begin{itemize}
+  \item   To read and to understand the Blue Print covers the soft operational infrastructure for the Rwanda Stock Exchange (RSE) which helps me to konw how the stock market operate .  
+    \item A strong understanding of how financial markets operate was essential for this task . This includes how stocks, bonds, and other securities are traded, how supply and demand influence prices, and how external factors such as economic events and corporate announcements impact the market.
+    \item Specifically, I needed to understand the dynamics of the Rwanda Stock Exchange (RSE), including its listed companies, trading hours, regulations, and the general economic environment within which it operates.
+    \item I also had to be aware of broader market trends, both locally and globally, to contextualize price movements.
+
+\end{itemize}
+\vspace{0.3cm}
+
+\textbf{2.Data Analysis Skills}
+\begin{itemize}
+  \item \textbf{Trend Analysis:}
+  \\
+  Understanding how to spot and analyze trends was fundamental in predicting future price movements. I applied methods like moving averages and linear regression to identify whether stocks were on an upward or downward trend.
+  \item This required knowing when to use short-term (e.g., daily or weekly) vs. long-term (e.g., quarterly or yearly) trend analysis to determine potential investment opportunities or risks.
+  
+\end{itemize}
+\vspace{0.3cm}
+\newpage
+
+\textbf{3.Attention to Details }
+\begin{itemize}
+\item Accuracy is essential in financial analysis, especially when dealing with large volumes of data and making important investment recommendations. A small error could lead to incorrect conclusions and decisions.
+\item Paying close attention to stock price trends and corporate announcements allowed me to accurately interpret price movements and provide meaningful insights.
+\item I had to carefully verify data consistency across different sources, such as ensuring the data I collected from the Rwanda Stock Exchange matched the data on excel.
+\end{itemize}
+
+
+\pagenumbering{Roman}
+\setcounter{page}{13}
+
+\vspace{1cm}
+
+\textbf{4.Financial Reporting and Communication }
+
+\begin{itemize}
+\item \textbf{Report Writing:}\\
+
+I needed to effectively communicate my findings through clear, concise, and well-organized reports. This involved:
+\begin{itemize}
+    \item Writing monthly and quarterly reports summarizing key stock price movements, trends, and the factors that influenced them.
+    \item Using technical language appropriately while also making the information accessible to non-experts, such as investors or company stakeholders. 
+\end{itemize}
+\end{itemize}
+\vspace{0.4cm}
+
+\textbf{5.Problem-Solving Skills}
+
+\begin{itemize}
+\item \textbf{Critical Thinking:}
+\\
+
+I needed strong critical thinking skills to analyze the root causes behind price movements. For example, if a particular stock experienced a significant drop, I had to investigate whether it was due to company-specific issues (e.g., a poor earnings report) or broader market trends (e.g., changes in government policy).
+\item This required me to ask the right questions, analyze data from multiple perspectives, and collaborate with senior analysts to develop well-informed conclusions.
+\end{itemize}
+
+\vspace{0.4cm}
+
+\textbf{6.Collaboration and Teamwork:}
+
+\begin{itemize}
+
+\item Working effectively within a team was important, as I collaborated with senior analysts and junior colleagues in preparing reports. This required clear communication, sharing data efficiently, and providing input into team discussions.
+
+\end{itemize}
+\vspace{0.7cm}
+
+These scientific and professional skills were integral to ensuring the accurate analysis of stock price movements, preparing insightful reports, and collaborating effectively with my team and the senior analyst.
+\vspace{1cm}
+
+
+
+\Large{\textbf{\underline{Problems encountered and approach taken to solve them }}}
+\vspace{0.2cm}
+
+During the course of my internship, I encountered several challenges while analyzing price movements on the Rwanda Stock Exchange (RSE). Here is a detailed explanation of these problems and the strategies I used to overcome them:
+\vspace{0.3cm}
+\textbf{2.Problem: Limited Access to Advanced Market Analysis Tools}
+\begin{itemize}
+    \item During my internship, I did not always have access to some advanced analytical tools or premium features of financial platforms, which could have enhanced the depth of my analysis.
+    \item \textbf{Approach Taken to Solve the Problem:}\\
+    
+    \underline{Leveraging Free Tools and Resources:}
+To overcome this limitation, I explored free or open-source tools for data analysis and market research. For example, I used online financial news platforms, open-access databases, and basic Excel features to conduct my analysis. 
+\\
+
+\underline{Maximizing Existing Tools:}
+I deepened my skills with the tools I did have access to, such as Excel, to perform more complex data analysis. I learned how to use advanced Excel functions like VBA scripting, pivot tables, and statistical add-ins to create more comprehensive reports despite the limited resources
+\end{itemize}
+\vspace{0.4cm}
+
+These strategies enabled me to overcome the challenges I encountered during my internship at the Rwanda Stock Exchange, ensuring that I could produce accurate, reliable, and timely reports on stock price movements. Through problem-solving, I gained practical experience in financial analysis and improved my ability to adapt to changing circumstances in a professional environment.
+\vspace{0.6cm}
+
+\textbf{\underline{Solution/Design Implemented}}
+\vspace{0.2cm}
+
+To tackle the challenges encountered while analyzing price movements for the first half of 2024 on the Rwanda Stock Exchange (RSE), several solutions and design approaches were implemented. These solutions involved data management strategies, the use of specific analytical tools, and collaborative frameworks that ensured the analysis was accurate, timely, and well-communicated. Below is a detailed description of the solutions and designs I implemented
+\vspace{0.3cm}
+\begin{itemize}
+    \item 
+
+Continuous Learning and Skill Development
+\begin{itemize}
+    \item \underline{Design:}
+Throughout my internship, I implemented a personal learning plan to improve my skills and adapt to new challenges. This involved:
+\item \underline{Self-Study:}
+I took online courses to further develop my skills in financial analysis, Excel, and Bloomberg Terminal usage. These courses enhanced my ability to conduct detailed financial analysis and improved my proficiency with data analysis tools.
+\item \underline{On-the-Job Learning:}
+I continuously sought feedback from my supervisors and senior analysts to identify areas for improvement. I also participated in internal training sessions offered by the Rwanda Stock Exchange to stay updated on industry trends and best practices in stock market analysis.
+\item \underline{Outcome:}
+This focus on continuous learning allowed me to enhance my technical and analytical skills over time, ensuring that I could contribute more effectively to the team and produce higher-quality reports.
+\end{itemize}
+\item Use of Data Visualization Tools for Trend Analysis
+\\
+To better interpret stock price movements and present them in a more accessible format, I implemented a data visualization design using Excel's charting tools.
+\begin{itemize}
+    \item Implementation:
+I created line graphs to depict stock price trends over time, making it easy to spot long-term upward or downward trends.
+\item Outcome:
+These visualizations simplified complex financial data, making it easier for non-technical stakeholders.
+\end{itemize}
+\end{itemize}
+\vspace{0.3cm}
+
+These solutions and designs improved the accuracy, efficiency, and clarity of the analysis I conducted on stock price movements. By implementing structured data management systems and  advanced statistical tools, I was able to overcome challenges and deliver high-quality, insightful reports to the team at the Rwanda Stock Exchange.
+\vspace{0.9cm}
+
+\textbf{\underline{New Skills/Knowledge Acquired}}
+\\
+\vspace{0.2cm}
+
+During my internship at the Rwanda Stock Exchange (RSE), I gained a wide array of skills and knowledge, ranging from technical competencies to practical industry insights. These new skills enhanced my ability to analyze stock markets, collaborate with professionals, and utilize advanced financial tools. Below is a detailed description of the key new skills and knowledge I acquired:
+
+\begin{itemize}
+    \item \textbf{ Understanding of Financial Markets}:
+    My internship deepened my understanding of how stock markets operate. I learned how to analyze stock price movements, interpret market trends, and understand the factors that influence stock performance.\\
+    
+    I gained experience analyzing company financial (e.g., income statements, balance sheets) to understand their impact on stock prices.\\
+    Knowledge, I gain  have a comprehensive understanding of the Rwanda Stock Exchange and its key listed companies. I understand how local market trends are influenced by global economic events and how to anticipate the impact of both macroeconomic and micro economic factors on stock prices. This has given me a strong foundation in financial markets that will be valuable for future career opportunities.
+    \item \textbf{Improved Communication and Collaboration Skills}:
+    Throughout the internship, I significantly improved my communication and collaboration skills by working closely with team members, supervisors, and external partners.
+    I now understand the importance of clear communication in a professional setting. Whether it was sharing findings with senior analysts or collaborating with peers, I realized that strong communication is key to delivering effective results in a team environment.
+    \item \textbf{Statistical and Analytical Tools}:
+    I learned to apply various statistical analysis techniques during my work, which greatly enhanced my ability to interpret stock price movements.
+    This experience provided me with a practical understanding of how statistical tools are used in financial analysis to generate accurate and actionable insights. I learned how to interpret the results of statistical models and use them to inform decision-making and report writing.
+    \vspace{1cm}
+
+    These new skills and knowledge greatly contributed to my personal and professional development during my internship at the Rwanda Stock Exchange. They equipped me with the tools needed to analyze financial markets effectively and collaborate in a professional setting, skills that I will continue to build on in my future academic and career pursuits.
+\end{itemize}
+
+\vspace{0.5cm}
+
+    \textbf{Deliverables:}
+
+    Monthly Reports: Submitted comprehensive market reports outlining key price movements, trends, and factors influencing the market during the month.\\
+    
+ \vspace{0.5cm}
+
+ \begin{center}
+     
+
+    \includegraphics[width=0.7\linewidth]{oot.png}
+    \\
+     \caption{price movement for local companies listed on RSE}
+      \end{center} 
+\vspace{0.6cm}
+
+\textbf{\underline{Team Member on Task}}
+\vspace{0.2cm}
+
+During my internship, I collaborated with several team members at the Rwanda Stock Exchange (RSE), each contributing to different aspects of the task. 
+\vspace{0.2cm}
+
+\textbf{Supervisor }
+\vspace{0.2cm}
+
+My supervisor was primarily responsible for overseeing the overall analysis of the Rwanda Stock Exchange's market data. Their duties included guiding me through data collection methodologies, ensuring accuracy in reporting, and approving final deliverables.she reviewed my analyses, ensured compliance with the exchange's standards, and gave feedback on how to improve the quality of data visualizations and reports.
+\vspace{0.2cm}
+
+\textbf{Co-worker}
+\vspace{0.2cm}
+
+My co-worker was primarily responsible for assisting in the collection, analysis, and organization of data for different listed companies on the RSE.he assisted in gathering stock price data, trading volumes, and corporate news for analysis. he worked closely with me in inputting the data into the centralized management system I developed.
+\vspace{0.2cm}
+
+\textbf{Group members}
+\vspace{0.2cm}
+
+We worked as a team to identify trends in the stock price movements and to draft the initial monthly reports. us feedback helped refine the data presentation and ensure the accuracy of the analysis.
+\vspace{0.8cm}
+
+Working alongside this team of professionals helped me understand the collaborative nature of financial analysis, especially in a stock exchange environment. Each member's contribution, from providing data to reviewing reports, played a critical role in delivering high-quality market analysis.
+\vspace{0.3cm}
+
+\subsection{\textbf{\Large{Briefly for task 1}}}
+\vspace{0.2cm}
+In this task, I was responsible for analyzing stock price movements on the Rwanda Stock Exchange (RSE) for the first half of 2024. My primary objective was to track, interpret, and report on the trends in stock prices, identify key market drivers, and deliver insights for internal stakeholders.
+\vspace{0.15cm}
+
+Through this task, I acquired advanced Excel skills and a deeper understanding of financial markets. Additionally, I developed strong data visualization, reporting, and collaboration skills while overcoming challenges like data inconsistencies. The deliverables included detailed monthly and quarterly reports, which were reviewed and approved by my supervisors for further dissemination.
+\vspace{0.15cm}
+
+This task offered significant exposure to financial data analysis, and the experience deepened my understanding of the stock market's operations and the impact of external factors on price movements.
+\vspace{0.15cm}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{Screenshot 2025-01-31 162255.png}
+    \caption{Shows Rwanda Stock Exchange trading board}
+    \label{fig:enter-label}
+\end{figure}
+
+\vspace{0.7cm}
+\newpage
+
+\section{\textbf{\huge{Learning outcomes}}}
+\vspace{0.2cm}
+
+During my internship at the Rwanda Stock Exchange (RSE), I encountered several critical events that contributed significantly to my learning and professional growth. These experiences helped shape my understanding of the workplace, enhanced my problem-solving abilities, and allowed me to develop key soft and technical skills. Below, I will document and reflect on three major events, their challenges, and the learning outcomes I achieved.
+\vspace{0.3cm}
+
+\textbf{I.First day on the internship job}
+\vspace{0.2cm}
+
+\underline{Event Description:}
+
+On my first day, I was both excited and anxious. I was introduced to my team and given an overview of my tasks, which included analyzing stock price movements and assisting with data reporting. However, I felt overwhelmed by the complexity of the tasks and the fast-paced environment. Although I had theoretical knowledge, I had never worked in a real-world stock exchange environment before.
+
+\vspace{0.2cm}
+\begin{itemize}
+    \item 
+
+My Role:
+My role was to assist the financial analysts by  conducting analyses, and preparing initial drafts of reports. I was expected to use tools like Excel which I had limited practical experience with before.
+\item
+Actions Taken:
+In hindsight, I should have been more proactive in familiarizing myself with the Bloomberg Terminal before starting the internship. While I asked questions when I struggled, I could have asked for a more structured introduction to the software. In future, I will ensure I prepare more comprehensively by studying relevant tools in advance.
+\item
+Performance:
+My performance was slower on the first day compared to later tasks, primarily due to the learning curve associated with the new tools. As I gained experience and confidence with the software, my performance improved significantly.
+\item 
+Guidance:
+I sought guidance from my supervisor and co-workers on how to navigate the Bloomberg Terminal and other technical tools. They provided me with manuals and some one-on-one support to help me understand the software's key features.
+\item 
+Improvements:
+The main area I need to improve is my adaptability to new software and technical systems. In future situations, I will aim to get a head start on learning the tools specific to my role before I begin.
+
+\item 
+Gain/Learn:
+I learned the importance of asking for help early and adapting quickly to new work environments. Additionally, I became proficient in using the microsoft excel, which will be valuable for future financial analysis tasks.
+\end{itemize}
+
+\underline{Challenges Faced:}
+I struggled to ask for difficulty tasks, because I was nervous ans shy.
+\vspace{0.2cm}
+
+\underline{Learning Outcome:}
+
+This experience taught me the importance of adaptability and the value of a positive learning mindset. By the end of the first day. I approached my supervisor and team members for advisor I quickly realized that asking questions and seeking support was key to overcoming the initial hurdles. 
+\vspace{0.5cm}
+
+\textbf{II.Receiving Positive Feedback from a Superior}
+\vspace{0.3cm}
+
+\underline{Event Description:}
+
+About midway through my internship, I was tasked with preparing a detailed report on stock price movements for one of the major listed companies. I used advanced Excel functions and data visualization tools to create the report. After submitting it, my supervisor reviewed it and provided positive feedback, highlighting my accurate analysis and the clear presentation of data.
+\vspace{0.15cm}
+
+\begin{itemize}
+    \item 
+
+My Role:
+I was responsible for collecting data, performing a thorough analysis, and preparing the final report. I used Excel for data analysis and employed visualization tools to create clear, concise graphs and charts.
+\item
+Actions Taken:
+Looking back, I am satisfied with how I handled this task. However, I believe I could have reached out earlier to discuss the report's format with my supervisor to ensure that I was on the right track from the beginning. In future, I will seek feedback throughout the process rather than waiting until the end.
+\item
+Performance:
+My performance on this occasion was strong because I had already learned from previous tasks. Compared to my initial experiences, I was more confident in my abilities, which was reflected in the quality of the report.
+\item
+Guidance:
+Although I did not seek much guidance for this specific task, I had previously learned from my supervisor's feedback on similar projects. Their earlier instructions helped me apply best practices to this report.
+\item
+Improvements:
+I can improve in time management by streamlining the data analysis process to leave more time for report formatting and review. Allocating time for internal review before submission will ensure better quality.
+\item 
+Gain/Learn:
+I gained confidence in my ability to perform financial analysis and create clear, professional reports. The positive feedback reinforced the importance of accuracy and data presentation in financial reporting.
+\end{itemize}
+
+\underline{Challenges Faced:}
+The challenge was the amount of detail required and ensuring that the analysis was comprehensive. I was nervous about making mistakes or missing important insights, as this report was one of my first significant responsibilities.
+\vspace{0.15cm}
+
+\underline{Learning Outcome:}
+Receiving positive feedback gave me a tremendous confidence boost. I realized that my technical skills had improved significantly, and I was on the right track in terms of my approach to financial analysis. This feedback also reinforced the importance of paying attention to detail and maintaining accuracy, especially in a data-driven field like stock market analysis. It encouraged me to continue improving my technical abilities and strive for even higher standards in my work.
+\vspace{0.5cm}
+
+\textbf{III.Realizing I Made a Mistake}
+\vspace{0.2cm}
+
+\underline{Event Description:}
+One day, while working on a price trend analysis for a quarterly report, I mistakenly used outdated data from the previous quarter for some calculations. The mistake was discovered when a senior analyst reviewed the report. I had to redo the analysis and update the report with the correct data, which delayed the submission of the final report.
+\vspace{0.15cm}
+
+\begin{itemize}
+    \item 
+    My Role:
+I was responsible for collecting data and performing calculations. Unfortunately, I failed to verify that I was using the latest data set, which led to the mistake in my calculations.
+\item 
+Actions Taken:
+Reflecting on this event, I should have been more diligent in verifying the data sources before proceeding with the analysis. In the future, I will double-check all data inputs before starting any analysis and establish a checklist for data validation.
+\item 
+Performance:
+My performance on this occasion differed from other tasks, as I was more rushed and less thorough in verifying data. This experience taught me to slow down and prioritize accuracy over speed, especially when dealing with critical data.
+\item 
+Guidance:
+I sought guidance from my supervisor after the mistake was discovered. They advised me on how to improve my data validation process and stressed the importance of accuracy in financial analysis. This guidance was instrumental in helping me learn from the mistake.
+\item
+Improvements:
+I need to improve my attention to detail, particularly when dealing with data sets. Implementing a habit of data verification before starting analysis will help avoid similar mistakes in the future.
+\item
+Gain/Learn:
+I learned that mistakes are an inevitable part of the learning process, but how you handle them is crucial. This experience helped me develop better attention to detail and fostered a sense of responsibility for the accuracy of my work.
+\end{itemize}
+\underline{Challenges Faced:}
+The biggest challenge was dealing with the disappointment of making an error, especially when the analysis was intended for senior management. I felt stressed about the impact my mistake had on the team's timeline.
+\vspace{0.15cm}
+
+\underline{Learning Outcome:}
+This experience taught me the importance of double-checking data and verifying sources before using them for analysis. I also learned how to handle mistakes professionally. Instead of becoming discouraged, I took immediate responsibility for the error and worked overtime to correct the analysis. The situation emphasized the value of accuracy and accountability in financial reporting. Moreover, it showed me that mistakes can serve as powerful learning experiences if approached constructively.
+\vspace{0.5cm}
+
+\subsection{\textbf{\Large{Reflection on Learning Outcomes}}}
+\vspace{0.15cm}
+
+Through these critical events, I gained a deeper understanding of how to navigate workplace challenges and build essential professional skills:
+\begin{itemize}
+    \item 
+
+Adaptability: My first day showed me the importance of being flexible and willing to learn quickly in a new environment. It prepared me to face future challenges with a positive and open-minded attitude.
+\item 
+Confidence and Communication: Receiving positive feedback reinforced my confidence and highlighted the importance of effective communication with supervisors and team members. Seeking guidance and feedback is vital for growth.
+\item
+Attention to Detail and Responsibility: Making a mistake reminded me that attention to detail is crucial in financial analysis. It also taught me how to handle errors responsibly, maintain professionalism under pressure, and view mistakes as learning opportunities.
+\end{itemize}
+These learning outcomes have had a significant impact on my development as a professional and will continue to shape my approach to work in the future.
+\vspace{0.7cm}
+
+\newpage
+\section{\textbf{\huge{Self-Development Plan}}}
+\vspace{0.2cm}
+
+As I reflect on my internship experience at the Rwanda Stock Exchange and my current academic pursuits in Applied Mathematics, I have identified several areas for further development. Below is a structured plan to guide my professional and personal growth moving forward.
+\vspace{0.3cm}
+
+\subsection{\textbf{\Large{Skills to Acquire}}}
+\begin{itemize}
+    \item Programming and Data Analytics
+\begin{itemize}
+    \item 
+
+Why: As financial markets become increasingly data-driven, knowledge of programming languages like Python and R is essential for building automated models, analyzing large datasets, and applying statistical methods.
+\item 
+How to Acquire:
+Complete online courses on Python for Finance and Data Analytics.
+Practice building financial data algorithms for stock price analysis, machine learning models for trend prediction, and portfolio optimization.
+Participate in open-source projects or internships that involve financial data processing.
+\end{itemize}
+
+\item Portfolio Management and Investment Strategies
+
+\begin{itemize}
+    \item 
+
+Why: To further my understanding of stock markets, I want to deepen my knowledge of portfolio management techniques, risk management, and investment strategies.
+\item 
+How to Acquire:
+Study portfolio management through advanced finance courses at university.
+Simulate managing a portfolio through platforms like Investopedia or stock market simulators to apply theoretical concepts.
+Engage with investment clubs at university or participate in competitions to practice real-world investing.
+
+\newpage
+
+\end{itemize}
+
+\end{itemize}
+\vspace{0.5cm}
+
+\subsection{\textbf{\Large{Career Options Considered}}}
+\vspace{0.2cm}
+
+\underline{\textbf{Financial Analyst}}
+\\
+
+Based on my experience at the RSE, I am leaning towards a career as a financial analyst, focusing on stock market research, company valuation, and economic trend analysis. This role would allow me to combine my skills in data analysis, finance, and mathematics. I will further pursue relevant certifications (e.g., CFA) to enhance my qualifications.
+\vspace{0.3cm}
+
+\underline{\textbf{Investment Banker}}
+\\
+
+A potential path is working in investment banking, where I would be involved in corporate finance, mergers and acquisitions, and underwriting. The demanding nature of the role aligns with my interest in analyzing financial statements and working under pressure. Gaining more hands-on experience through internships will help me prepare for this path.
+\vspace{0.3cm}
+
+\underline{\textbf{Portfolio Manager}}
+\\
+
+As I develop my knowledge of portfolio management and investment strategies, I may pursue a career managing investment portfolios for clients, assessing risk, and making strategic investment decisions to meet their financial goals. Joining an investment club at university will give me more practical experience in this field.
+\vspace{1cm}
+
+
+\subsection{\Large{\textbf{Managing Time and Balancing Commitments}}}
+\vspace{0.2cm}
+
+To successfully achieve my goals, balancing time between academic studies, professional development, and personal well-being will be crucial, Also to have a time management plan.
+\vspace{0.7cm}
+\newpage
+
+\section{\textbf{\huge{Conclusion}}}
+\vspace{0.2cm}
+
+In conclusion, my internship at the Rwanda Stock Exchange (RSE) was a highly valuable experience that allowed me to apply the theoretical knowledge I have gained through my studies in both Finance and Applied Mathematics. The tasks I undertook, including analyzing stock price movements and producing financial reports, were directly relevant to my academic background and helped bridge the gap between classroom learning and real-world application.
+\vspace{0.2cm}
+
+Moreover, my background in Applied Mathematics was essential in performing quantitative analysis and statistical modeling. I applied mathematical techniques, including statistical methods like moving averages, regression analysis, and correlation studies, to better understand stock price trends and market behaviors. My improved skills in data analysis, problem-solving, and mathematical computing contributed significantly to my success in performing the assigned tasks and meeting deliverable requirements.
+\vspace{0.2cm}
+
+In terms of new skills, I gained proficiency in advanced Excel functions, Bloomberg Terminal usage, and data modeling, which are valuable both academically and professionally. I also developed soft skills like teamwork, communication, and time management, which are crucial for success in any work environment.
+\vspace{0.2cm}
+
+This internship has enhanced my knowledge, improved my technical skills, and further strengthened my interest in pursuing a career in financial analysis or stock market research. It has also provided me with a deeper understanding of how mathematical principles are applied in real-world financial scenarios, making this internship experience not only relevant but transformative for my academic and professional growth.
+\vspace{0.7cm}
+\newpage
+
+\section{\textbf{\huge{Recommendation }}}
+\vspace{0.15cm}
+
+Based on my internship experience at the Rwanda Stock Exchange (RSE), I would also suggest extending the internship period beyond 4 weeks. While the 4-week duration provided valuable exposure to the workings of the Rwanda Stock Exchange, it was not enough time to fully grasp the complexities of stock market operations and perform more in-depth analysis, Also I have several recommendations for both future interns and the internship program itself:
+\vspace{0.2cm}
+
+\textbf{I}.\underline{Why 4 Weeks Are Not Enough?} Skill Development The 4-week timeframe allowed for basic skill acquisition, but extended periods would provide more time to refine these skills, particularly in data analysis, financial modeling, and technical tool usage. This would better prepare interns for the job market or further academic studies. I recommend that the internship period be extended to at least 8 to 12 weeks.\\
+An extended period would also enable a stronger relationship between interns and supervisors, facilitating better guidance and mentorship throughout the internship.
+\vspace{0.2cm}
+
+\textbf{II}.\underline{Provide Pre-Internship Workshops or Training:}\\
+The school should organize pre-internship workshops focusing on key skills such as professional communication, time management, financial analysis tools (Excel, Power BI, etc), and industry-specific knowledge.
+ Many students enter internships without practical knowledge of the tools and techniques used in professional environments. Offering such workshops would better prepare students, enabling them to contribute more effectively and make the most of their internship experience.
+\vspace{0.2cm}
+
+\textbf{III}.\underline{Promote Internships in International Organizations?}\\
+I Recommend the school should encourage and assist students in securing international internships or placements with multinational companies.
+
+ \vspace{0.2cm}
+
+ By implementing these recommendations, the school can enhance the value and impact of its internship program, ensuring that students not only gain practical experience but also develop the skills and confidence needed to thrive in their future careers.
+\vspace{1cm}
+
+\section{\textbf{\huge{FAQ}}}
+\vspace{0.2cm}
+
+\textbf{Stock}
+A stock is a share of a company. It is the unit of ownership. When you buy a share in a company, you own a part of the capital of the capital and you become one of the owners of the company to the extent of the number of shares you hold in the company.
+\vspace{0.2cm}
+
+\textbf{Market capitalization}
+\\
+
+Market capitalization is simply the market value of a listed company. It is also commonly shortened to 'market cap'. It is arrived at by multiplying the total number of shares forming the capital of a company by the current market price. It changes often as the market price changes. When the price of a stock is rising, market cap also rises and hence the value of the company rises. Companies are compared in the stock market by their market cap. Big cap companies are large and small cap companies are small.
+\vspace{0.2cm}
+
+\textbf{Stockbroker}
+\\
+
+A stockbroker is an agent of investors in the stock market. They are authorized individuals who can buy or sell securities on behalf of investors. Stockbrokers are usually representatives of companies that are members of a stock exchange.  They act on behalf of investors as well as on their own behalf. When acting on their own, they are referred to as dealers. They earn their income by charging a fee called a commission.
+\vspace{0.2cm}
+
+\textbf{What is a share?}
+\vspace{0.2cm}
+
+A shares or equity is a unit of ownership in a company.
+\vspace{0.3cm}
+
+\textbf{What is a bond?}
+\vspace{0.2cm}
+
+A bond is a debt .When you buy a bond, you become a lender. When you buy Treasury Bonds you become a lender to the government and the government is the borrower. Equally when you buy a corporate bond you become a lender to the company. 
+
+Bonds promise to pay interest or coupon at specific intervals of time during until maturity when they pay the back the original principal plus the last interest payment.
+\vspace{0.2cm}
+
+\textbf{What is Capital Market?}
+\vspace{0.2cm}
+
+A financial system is generally comprised of the money market and the capital. A capital market is a market for securities which could be debt or equity, where business enterprises and government can raise long-term funds. Securities traded in the capital market are usually long dated financial instruments like:
+\\
+
+Treasury Bonds, Municipal Bonds, Corporate Bonds and debentures, shares or stocks issued by companies.The capital market is further divided into primary and secondary market.
+\\
+
+Primary market
+\\
+
+The primary market is the market for new issuers or where new capital is raised. It is the market where securities are sold for the first time. At the primary market sale proceeds of the securities offered flow directly from the buyers or investors to the issuers of the securities.
+\\
+
+Secondary market
+\\
+
+The secondary market is the market for trading securities that have been sold or issued in the primary market and already in the hands of the public. Once securities have been successfully issued in the primary market, they are subsequently traded in the secondary market. This is where stock markets, stock exchanges or OTC markets by whichever name the market may be referred to, provide the facilities for secondary trading.
+\\
+
+The secondary market, provide a very important complement to the primary market. An active secondary market makes it easier for corporate entities and Governments to raise fresh capital through the primary market.
+\vspace{0.2cm}
+
+\textbf{CDS account} 
+\vspace{0.2cm}
+
+CDS is short for Central Depository System. It is an electronic register of shareholders or bondholders of a company. It is usually used for clearing or settling secondary market transactions instead of the use of the physical paper certificates. When one buys shares where CDS is used, the shares are put in an electronic account instead of being issued with a paper certificate and when they sell the shares are transferred only through an electronic entry. This makes trading faster and less risky. The CDS accounts are hosted by an independent company as a service provider.
+\vspace{2cm}
+
+
+ \section{\textbf{\huge{Reference }}}
+ \begin{itemize}
+     \item Rwanda Stock Exchange LTD   Rule Book.
+     \item \underline{\href{https://www.rse.rw/}{RSE website: rse.com}}
+     \item Capital Market Authority(CMA) site :\href{https://www.cma.rw/index.php?id=2}{\underline{www.cma.rw}}
+     \item \href{https://mocapital.co.rw/}{Mo capital LTD Licensed by @CMARwanda to Provide Stock Brokerage and Investment Advisory Services , official Website : \underline{mocapital.co.rw}}
+     \item National Bank of Rwanda : \href{https://www.bnr.rw/resultdata}{\underline{bnr.rw}}
+     \item More Articles:\\
+     \begin{itemize}
+         \item 
+     
+     \href{https://www.african-markets.com/en/stock-markets/rse/rwanda-stock-market-eyes-connection-to-regional-bourses}{https://www.african-markets.com/en/stock-markets/rse/rwanda-stock-market-eyes-connection-to-regional-bourses}\\
+     \item  
+     \href{https://www.african-markets.com/en/stock-markets/rse/brd-floats-sustainable-link-bond-on-rwanda-stock-exchange}{https://www.african-markets.com/en/stock-markets/rse/brd-floats-sustainable-link-bond-on-rwanda-stock-exchange}
+     \item \href{https://www.rse.rw/IMG/pdf/rse_annual_report_2023.pdf}{https://www.rse.rw/IMG/pdf/rse_annual_report_2023.pdf}
+     \end{itemize}
+ \end{itemize}
+
+\vspace{0.5cm}
+
+\line{ ................................................................................................................................        }
+
+ 
+\end{document}
